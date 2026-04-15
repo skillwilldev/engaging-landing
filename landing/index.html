@@ -1,11 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>landing Page</title>
 </head>
+
 <body>
-    
+
+    <header>
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="logo">
+                    <p>
+                        <span>Landing</span>
+                        <span>Page</span>
+                    </p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><button>How it works</button></li>
+                        <li><button>
+                                <img src="./img/rocket-launch.svg" alt="">
+                                <span>Get Started</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="engaging">
+            <div class="container">
+                <div class="engaging__inner">
+                    <div class="engaging__body">
+                        <h1>Create Engaging Landing Pages</h1>
+                        <p>Build beautiful landing pages in record time with <a href="#">Anima</a>’s Landing Page UI kit
+                            for
+                            Figma. No code required!</p>
+                        <div class="engaging__btns">
+                            <button>
+                                <img src="./img/rocket-launch.svg" alt="">
+                                <span>Get Started</span>
+                            </button>
+                            <button>How it works</button>
+                        </div>
+                    </div>
+                    <div class="engaging__img">
+                        <div class="circle">
+                            <img src="./img/mobile.png" alt="mobile-decore">
+                            <span class="circle-lg"></span>
+                            <span class="circle-sm"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="brands">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./img/brands/airbnb.svg" alt="airbnb-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/brands/google.svg" alt="google-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/brands/amazon.svg" alt="amazon-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/brands/microsoft.svg" alt="microsoft-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/brands/fedEx.svg" alt="fedEx-logo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./img/brands/hubSpot.svg" alt="hubSpot-logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="business">
+            <div class="container">
+                <div class="business__inner">
+                    <div class="business__inner-top">
+                        <h2>Pick Your Perfect Plan</h2>
+                        <p>Find the perfect plan for your business with our flexible pricing options.</p>
+                    </div>
+                    <div class="business__items">
+                        <div class="business__item">
+                            <div class="plan">Free</div>
+                            <div class="business__item-price">
+                                <span>$0</span>
+                                <span>/ month</span>
+                            </div>
+                            <p class="business__item-descr">Best for Small Teams or Individuals.</p>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                            </ul>
+                            <button class="business__item-btn">
+                                <span>Get Started</span>
+                                <img src="./img/arrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                        <div class="business__item">
+                            <div class="plan">Professional</div>
+                            <div class="business__item-price">
+                                <span>$19</span>
+                                <span>/ month</span>
+                            </div>
+                            <p class="business__item-descr">Ideal for Growing Companies.</p>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                            </ul>
+                            <button class="business__item-btn">
+                                <span>Get Started</span>
+                                <img src="./img/arrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                        <div class="business__item">
+                            <div class="plan">Enterprise</div>
+                            <div class="business__item-price">
+                                <span>$49</span>
+                                <span>/ month</span>
+                            </div>
+                            <p class="business__item-descr">Ultimate for Enterprise Solutions.</p>
+                            <ul>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                                <li>
+                                    <svg width="16" height="11" viewBox="0 0 16 11" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.125 1L5.375 9.75L1 5.375" stroke="#009379" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    <p>Write feature details here</p>
+                                </li>
+                            </ul>
+                            <button class="business__item-btn">
+                                <span>Get Started</span>
+                                <img src="./img/arrow.svg" alt="arrow">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+        <!-- <section class="team">
+            <div class="container">
+                <div class="team__inner">
+                    <div class="team__inner-top">
+                        <h2>Meet our team</h2>
+                        <p>Get to know the faces behind the scenes and learn about the values that drive us.</p>
+                    </div>
+                    <div class="team__items">
+                        <div class="team__item">
+                            <img src="./img/person-1.png" alt="Sarah.K">
+                            <h3>Sarah K.</h3>
+                            <p>UX Designer</p>
+
+                            <div class="team__social">
+                                <div class="twitter">
+                                    <img src="./img/social/twitter.svg" alt="twitter">
+                                </div>
+                                <div class="dribbble">
+                                    <img src="./img/social/dribbble.svg" alt="dribbble">
+                                </div>
+                                <div class="inst">
+                                    <img src="./img/social/inst.svg" alt="instagram">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <img src="./img/person-2.png" alt="Sarah.K">
+                            <h3>Michael L.</h3>
+                            <p>Lead Designer</p>
+
+                            <div class="team__social">
+                                <div class="twitter">
+                                    <img src="./img/social/twitter.svg" alt="twitter">
+                                </div>
+                                <div class="dribbble">
+                                    <img src="./img/social/dribbble.svg" alt="dribbble">
+                                </div>
+                                <div class="inst">
+                                    <img src="./img/social/inst.svg" alt="instagram">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team__item">
+                            <img src="./img/person-3.png" alt="Sarah.K">
+                            <h3>Lauren M.</h3>
+                            <p>Product Designer</p>
+
+                            <div class="team__social">
+                                <div class="twitter">
+                                    <img src="./img/social/twitter.svg" alt="twitter">
+                                </div>
+                                <div class="dribbble">
+                                    <img src="./img/social/dribbble.svg" alt="dribbble">
+                                </div>
+                                <div class="inst">
+                                    <img src="./img/social/inst.svg" alt="instagram">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    <!-- <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <p>© 2026 Anima’s Landing Page Ui Kit.</p>
+                <ul>
+                    <li><a href="#"><img src="./img/social/youtube.svg" alt="youtube"></a></li>
+                    <li><a href="#"><img src="./img/social/inst.svg" alt="instagram"></a></li>
+                    <li><a href="#"><img src="./img/social/github.svg" alt="github"></a></li>
+                    <li><a href="#"><img src="./img/social/linkedin.svg" alt="linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> -->
+
 </body>
+
 </html>
