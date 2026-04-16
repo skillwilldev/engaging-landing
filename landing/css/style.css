@@ -209,7 +209,7 @@ header {
     }
 
 
-    
+
     .engaging__img {
         width: 100%;
         aspect-ratio: 1 / 1;
@@ -684,7 +684,7 @@ footer {
 
 }
 
-@media (width < 400px) {
+@media (width < 450px) {
 
     .business__items,
     .team__items {
