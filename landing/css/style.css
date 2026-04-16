@@ -214,8 +214,6 @@ header {
         width: clamp(21.875rem, -1.563rem + 41.667vw, 28.125rem);
         height: clamp(21.875rem, -1.563rem + 41.667vw, 28.125rem);
         position: relative;
-        transform: scale(100%);
-
 
         img {
             position: absolute;
