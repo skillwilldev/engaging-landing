@@ -1,0 +1,233 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f4f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 2px solid #1a1a1a;
+}
+
+caption {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    padding-bottom: 14px;
+    text-align: center;
+}
+
+th,
+td {
+    border: 1px solid #1a1a1a;
+    padding: 13px 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+thead th {
+    background: #1a1a1a;
+    color: #f5f4f0;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+thead tr:last-child th {
+    background: #2e2e2e;
+    color: #f5f4f0;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+thead tr:first-child th:first-child,
+thead tr:first-child th:nth-child(2) {
+    vertical-align: middle;
+}
+
+tbody tr td:first-child {
+    font-weight: 600;
+    color: #555;
+    font-size: 13px;
+}
+
+tbody tr td:nth-child(2) {
+    font-weight: 600;
+    text-align: left;
+    letter-spacing: 0.01em;
+}
+
+tbody tr td:last-child {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+tbody tr:nth-child(odd) {
+    background: #fafafa;
+}
+
+tbody tr:nth-child(even) {
+    background: #fff;
+}
+
+tbody tr:hover td {
+    background: #f0ede6;
+    transition: background 0.15s ease;
+}
+
+tfoot tr td {
+    background: #1a1a1a;
+    color: #f5f4f0;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+}
+
+tfoot tr td:last-child {
+    font-size: 16px;
+    color: #fff;
+}
+
+@media (max-width: 550px) {
+
+    thead {
+        display: none;
+    }
+
+    table,
+    tbody,
+    tfoot {
+        display: block;
+        width: 100%;
+    }
+
+    caption {
+        font-size: 13px;
+        padding: 12px 0;
+        display: block;
+    }
+
+    /* each student row → card */
+    tbody tr {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: #fff;
+        border: 2px solid #1a1a1a;
+        margin-bottom: 12px;
+        overflow: hidden;
+    }
+
+    tbody tr:hover td {
+        background: #f0ede6;
+    }
+
+    tbody td {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 10px 14px;
+        border: 1px solid #d0cfc9;
+        font-size: 13px;
+        text-align: left;
+    }
+
+    tbody td::before {
+        content: attr(data-label);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #888;
+        margin-bottom: 3px;
+    }
+
+    tbody td:first-child {
+        background: #1a1a1a;
+        color: #f5f4f0;
+        font-size: 11px;
+    }
+
+    tbody td:first-child::before {
+        color: #aaa;
+    }
+
+    tbody td:nth-child(2) {
+        background: #1a1a1a;
+        color: #f5f4f0;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    tbody td:nth-child(2)::before {
+        color: #aaa;
+    }
+
+    tbody td:nth-child(3),
+    tbody td:nth-child(4),
+    tbody td:nth-child(5) {
+        background: #fafafa;
+    }
+
+    tbody td:last-child {
+        grid-column: span 2;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background: #f0ede6;
+        font-weight: 700;
+        font-size: 15px;
+        color: #1a1a1a;
+        border-top: 2px solid #1a1a1a;
+    }
+
+    tbody td:last-child::before {
+        margin-bottom: 0;
+        font-size: 11px;
+    }
+
+    tfoot {
+        margin-top: 4px;
+    }
+
+    tfoot tr {
+        display: flex;
+        justify-content: space-between;
+        background: #1a1a1a;
+        border: 2px solid #1a1a1a;
+    }
+
+    tfoot td {
+        display: block;
+        background: #1a1a1a !important;
+        color: #f5f4f0;
+        font-weight: 700;
+        font-size: 13px;
+        padding: 12px 14px;
+        border: none;
+    }
+
+    tfoot td:last-child {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+}

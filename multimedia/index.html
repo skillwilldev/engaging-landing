@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>მულტიმედია ელემენტები</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>მულტიმედია ელემენტები</h1>
+
+        <div class="block">
+            <span class="label">video — controls · autoplay · muted · loop · poster</span>
+            <video controls autoplay muted loop
+                poster="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=640&q=80">
+                <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4" />
+                <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
+                თქვენი ბრაუზერი არ უჭერს მხარს video ელემენტს.
+            </video>
+        </div>
+        <hr />
+        <div class="block">
+            <span class="label">audio — controls · loop</span>
+            <audio controls loop>
+                <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg" />
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+                თქვენი ბრაუზერი არ უჭერს მხარს audio ელემენტს.
+            </audio>
+        </div>
+        <hr />
+        <div class="block">
+            <span class="label">iframe — YouTube</span>
+            <div class="iframe-wrap">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rg7Fvvl3taU?si=HO_fRMOvjwuCe2Md"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
