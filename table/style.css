@@ -89,9 +89,11 @@ tbody tr:nth-child(even) {
     background: #fff;
 }
 
-tbody tr:hover td {
-    background: #f0ede6;
-    transition: background 0.15s ease;
+@media (hover: hover) {
+    tbody tr:hover td {
+        background: #f0ede6;
+        transition: background 0.15s ease;
+    }
 }
 
 tfoot tr td {
@@ -136,9 +138,9 @@ tfoot tr td:last-child {
         overflow: hidden;
     }
 
-    tbody tr:hover td {
+    /* tbody tr:hover td {
         background: #f0ede6;
-    }
+    } */
 
     tbody td {
         display: flex;
