@@ -48,6 +48,3 @@ A data-heavy component focused on complex table structures and mobile accessibil
 ## 👤 Author
 **Melik Papikyan**
 * GitHub: [@skillwilldev](https://github.com/skillwilldev/engaging-landing)
-
----
-*This portfolio was developed as part of a Final Examination in Front-End Development.*
